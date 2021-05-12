@@ -12,7 +12,7 @@ const Movie = (props) => {
   const movie = props.movies.find((movie) => movie.id === Number(id));
 
   const handleClick = () => {
-    props.deleteMovie(movie.id);
+    props.deleteMovie();
     push("/movies");
   };
 
@@ -76,7 +76,7 @@ const Movie = (props) => {
 const mapStateToProps = (state) => {
   console.log(state);
   return {
-    movies: state.movies,
+    movies: state.movies.movies,
   };
 };
 

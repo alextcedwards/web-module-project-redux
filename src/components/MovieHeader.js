@@ -30,7 +30,6 @@ const MovieHeader = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return {
     appTitle: state.appTitle,
   };
